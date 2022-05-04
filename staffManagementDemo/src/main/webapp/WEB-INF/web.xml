@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+      <servlet>
+      	<servlet-name>login</servlet-name>
+      	<servlet-class>com.staffManagement.smloginServlet</servlet-class> 
+      </servlet>  
+      
+      <servlet-mapping>
+      	<servlet-name>login</servlet-name>
+      	<url-pattern>/log</url-pattern>
+      </servlet-mapping> 
+      
+      <servlet>
+      	<servlet-name>applyServlet</servlet-name>
+      	<servlet-class>com.ApplyLeave.applyServlet</servlet-class>
+      </servlet>
+      
+      <servlet-mapping>
+      	<servlet-name>applyServlet</servlet-name>
+      	<url-pattern>/apply</url-pattern>
+      </servlet-mapping>
+      
+      <servlet>
+      	<servlet-name>viewleave</servlet-name>
+      	<servlet-class>com.ApplyLeave.viewleaveservlet</servlet-class>
+      </servlet>  
+      
+      <servlet-mapping>
+      	<servlet-name>viewleave</servlet-name>
+      	<url-pattern>/view</url-pattern>
+      </servlet-mapping> 
+      
+       <servlet>
+      	<servlet-name>updateleaveservlet</servlet-name>
+      	<servlet-class>com.ApplyLeave.updateleaveservlet</servlet-class>
+      </servlet>  
+      
+      <servlet-mapping>
+      	<servlet-name>updateleaveservlet</servlet-name>
+      	<url-pattern>/update</url-pattern>
+      </servlet-mapping> 
+      
+      
+      <servlet>
+      	<servlet-name>deleteleaveservlet</servlet-name>
+      	<servlet-class>com.ApplyLeave.deleteleaveservlet</servlet-class>
+      </servlet>  
+      
+      <servlet-mapping>
+      	<servlet-name>deleteleaveservlet</servlet-name>
+      	<url-pattern>/delete</url-pattern>
+      </servlet-mapping> 
+      
+  
+       <servlet>
+      	<servlet-name>electricityservlet</servlet-name>
+      	<servlet-class>com.PayBill.electricityservlet</servlet-class>
+      </servlet>  
+      
+      <servlet-mapping>
+      	<servlet-name>electricityservlet</servlet-name>
+      	<url-pattern>/ebil</url-pattern>
+      </servlet-mapping> 
+      
+      
+      
+      <servlet>
+      	<servlet-name>waterservlet</servlet-name>
+      	<servlet-class>com.PayBill.waterservlet</servlet-class>
+      </servlet>  
+      
+      <servlet-mapping>
+      	<servlet-name>waterservlet</servlet-name>
+      	<url-pattern>/wbil</url-pattern>
+      </servlet-mapping> 
+      
+      
+      
+            <servlet>
+      	<servlet-name>phoneservlet</servlet-name>
+      	<servlet-class>com.PayBill.phoneservlet</servlet-class>
+      </servlet>  
+      
+      <servlet-mapping>
+      	<servlet-name>phoneservlet</servlet-name>
+      	<url-pattern>/pbil</url-pattern>
+      </servlet-mapping> 
+      
+      
+      <servlet>
+      	<servlet-name>GenerateSalaryServlet</servlet-name>
+      	<servlet-class>com.Salary.GenerateSalaryServlet</servlet-class>
+      </servlet>  
+      
+      <servlet-mapping>
+      	<servlet-name>GenerateSalaryServlet</servlet-name>
+      	<url-pattern>/gsal</url-pattern>
+      </servlet-mapping> 
+      
+
+      <servlet>
+      	<servlet-name>viewPaySlipServlet</servlet-name>
+      	<servlet-class>com.Salary.viewPaySlipServlet</servlet-class>
+      </servlet>  
+      
+      <servlet-mapping>
+      	<servlet-name>viewPaySlipServlet</servlet-name>
+      	<url-pattern>/payslip</url-pattern>
+      </servlet-mapping> 
+      
+  
+      <servlet>
+      	<servlet-name>UpdateSalaryServlet</servlet-name>
+      	<servlet-class>com.Salary.UpdateSalaryServlet</servlet-class>
+      </servlet>  
+      
+      <servlet-mapping>
+      	<servlet-name>UpdateSalaryServlet</servlet-name>
+      	<url-pattern>/upsal</url-pattern>
+      </servlet-mapping> 
+      
+    
+      <servlet>
+      	<servlet-name>insertSfMemberServlet</servlet-name>
+      	<servlet-class>com.DepartmentManager.insertSfMemberServlet</servlet-class>
+      </servlet>  
+      
+      <servlet-mapping>
+      	<servlet-name>insertSfMemberServlet</servlet-name>
+      	<url-pattern>/inseretsf</url-pattern>
+      </servlet-mapping> 
+      
+  
+       <servlet>
+      	<servlet-name>ManagerViewServlet</servlet-name>
+      	<servlet-class>com.DepartmentManager.ManagerViewServlet</servlet-class>
+      </servlet>  
+      
+      <servlet-mapping>
+      	<servlet-name>ManagerViewServlet</servlet-name>
+      	<url-pattern>/managerview</url-pattern>
+      </servlet-mapping> 
+      
+   
+       <servlet>
+      	<servlet-name>UpdateStaffMemberServlet</servlet-name>
+      	<servlet-class>com.DepartmentManager.UpdateStaffMemberServlet</servlet-class>
+      </servlet>  
+      
+      <servlet-mapping>
+      	<servlet-name>UpdateStaffMemberServlet</servlet-name>
+      	<url-pattern>/upsfmemeber</url-pattern>
+      </servlet-mapping> 
+      
+      
+      <servlet>
+      	<servlet-name>DeleteStaffMemberServlet</servlet-name>
+      	<servlet-class>com.DepartmentManager.DeleteStaffMemberServlet</servlet-class>
+      </servlet>  
+      
+      <servlet-mapping>
+      	<servlet-name>DeleteStaffMemberServlet</servlet-name>
+      	<url-pattern>/deletestfmem</url-pattern>
+      </servlet-mapping> 
+      
+      
+       <servlet>
+      	<servlet-name>inedexLoginServlet</servlet-name>
+      	<servlet-class>com.staffManagement.inedexLoginServlet</servlet-class>
+      </servlet>  
+      
+      <servlet-mapping>
+      	<servlet-name>inedexLoginServlet</servlet-name>
+      	<url-pattern>/indexlog</url-pattern>
+      </servlet-mapping> 
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+</web-app> 
+
+
+
+
+        
